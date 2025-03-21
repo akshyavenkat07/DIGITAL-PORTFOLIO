@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #3A3A3A;
+            background: black;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        /* Animated Background */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/023/618/860/small_2x/space-bombs-in-my-portfolio-and-most-of-them-have-several-versions4k-full-frame-zoomed-in-and-with-rotation-space-bombs-in-my-portfolio-and-most-of-them-have-several-versions-free-video.jpg') no-repeat center center/cover;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #3A3A3A;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            transition: color 0.3s, text-shadow 0.3s;
+            cursor: pointer;
+        }
+        nav ul li a:hover {
+            color: #6C63FF;
+            text-shadow: 0px 0px 15px #6C63FF;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 120px 0 40px;
+        }
+
+        /* Sections */
+        section {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 40px;
+            margin: 30px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #3A3A3A;
+            margin-bottom: 20px;
+        }
+
+        /* About Section */
+        #about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 40px;
+}
+
+#about h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #6C63FF;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #4F46E5;
+            box-shadow: 0 0 15px rgba(111, 99, 255, 0.8);
+        }
+
+        /* Skills Section */
+        #skills p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        /* Projects Section */
+        #projects h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #projects p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I'm a BSc student with a strong passion for learning, design, and sports. I love diving into new concepts, whether it's in academics, creative projects, or personal growth. Design excites me, especially when I get to experiment with Canva, HTML, and CSS to bring ideas to life.
+                    Beyond my studies, I’m an active person who enjoys sports and staying fit. Whether it’s playing, watching, or analyzing the game, sports are a big part of who I am. I thrive on creativity, challenges, and constantly improving my skills. I'm always eager to learn, create, and push my limits!</p>
+            </div>
+            <img src="331A5466.JPG" alt="Your Photo" class="profile-img">
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Canva Design</p>
+            <p>HTML & CSS</p>
+            <p>Sports Enthusiast</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+        
+            <div class="project-box">
+                <h3>Nutritious Diet Planner</h3>
+                <div class="logo-container">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2643/2643371.png" alt="Diet Planner Logo" class="project-logo">
+                </div>
+                <p>A web-based meal planning tool.</p>
+            </div>
+        
+            <div class="project-box">
+                <h3>Canva Design Project</h3>
+                <div class="logo-container">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968705.png" alt="Canva Logo" class="project-logo">
+                </div>
+                <p>Designed engaging social media visuals using Canva.</p>
+            </div>
+        
+            <div class="project-box">
+                <h3>Portfolio Website</h3>
+                <div class="logo-container">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3004/3004721.png" alt="Portfolio Logo" class="project-logo">
+                </div>
+                <p>Developed a personal portfolio using HTML and CSS.</p>
+            </div>
+        </section>
+        
+        <section id="resume">
+            <h2>View My Resume</h2>
+            <a href="AKSHYA RESUME (1).pdf" class="btn" download>download Resume</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <a href="mailto:akshyavenkat.07@gmail.com" class="btn">Email</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AKSHYA.V. All rights reserved.</p>
+    </footer>
+</body>
+</html>
